@@ -83,6 +83,7 @@ test:
 #
 production:
   <<: *default
-  database: super_awesome_app_production
-  username: super_awesome_app
-  password: <%= ENV["SUPER_AWESOME_APP_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  # database: super_awesome_app_production
+  # username: super_awesome_app
+  # password: <%= ENV["SUPER_AWESOME_APP_DATABASE_PASSWORD"] %>
