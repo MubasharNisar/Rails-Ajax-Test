@@ -19,7 +19,7 @@ address.addEventListener("keydown", function (e) {
               document.getElementById('list_urls').innerHTML += '<li>'+url_arr[i]+'</li>';
             }
           }else{
-            alert("Something went wrong!");
+            // alert("Something went wrong!");
           }
         }
       });
