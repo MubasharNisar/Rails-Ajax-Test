@@ -18,9 +18,7 @@ module Validate
     end
 
     def extract_domain
-      @url = @url.gsub("https://", '')
-      @url = @url.gsub("http://", '') 
-      @url = @url.gsub('www.','')
+      @url = @url.gsub("https://", '').gsub("http://", '').gsub('www.','')
       @url = @url.split('/')[0]
     end
 
